@@ -1,16 +1,14 @@
 package com.springframework.Dependencyinjection.controller;
 
-import com.springframework.Dependencyinjection.services.GreetingServiceImpl;
+import com.springframework.Dependencyinjection.services.ConstructorGreatingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ContrurctorInjectedControllerTest {
 ContrurctorInjectedController controller;
     @BeforeEach
     void setUp() {
-        controller= new ContrurctorInjectedController(new GreetingServiceImpl());
+        controller= new ContrurctorInjectedController(new ConstructorGreatingService());
 
     }
 
